@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Общение с пользователями</title>
+    <link rel="stylesheet" href="vote.css">
+</head>
+<body>
+    <header>
+        <h1>Общение с пользователями</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="articles.html">Статьи</a></li>
+                <li><a href="videos.html">Видео</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="forum.html">Форум</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="chat">
+            <h2>Общение</h2>
+            <form id="chat-form">
+                <label for="username">Ваше имя:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="comment">Ваш комментарий:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+        <section id="messages">
+            <h2>Сообщения</h2>
+            <div id="message-list">
+                <!-- Здесь будут отображаться сообщения -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Общение с пользователями. Все права защищены.</p>
+    </footer>
+    <script src="msg.js"></script>
+</body>
+</html>
